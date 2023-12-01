@@ -53,7 +53,7 @@ class CadastroFragment : Fragment(){
 
                         val lista = Lista(0,nome, unidade, descricao, setor)
                         viewModel.insert(lista)
-                        Snackbar.make(binding.root, "Contato inserido", Snackbar.LENGTH_SHORT).show()
+                        Snackbar.make(binding.root, "Produto inserido", Snackbar.LENGTH_SHORT).show()
                         findNavController().popBackStack()
                         true
                     }

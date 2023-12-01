@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/listaComprasFragment"
         android:name="br.ifsp.shoppinglist.ui.ListaComprasFragment"
-        android:label="fragment_lista_compras"
+        android:label="Lista de Compras"
         tools:layout="@layout/fragment_lista_compras" >
         <action
             android:id="@+id/action_listaComprasFragment_to_cadastroFragment"
