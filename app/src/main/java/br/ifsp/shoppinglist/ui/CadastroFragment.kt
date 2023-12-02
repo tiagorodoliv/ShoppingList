@@ -45,7 +45,7 @@ class CadastroFragment : Fragment(){
             override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
                 // Handle the menu selection
                 return when (menuItem.itemId) {
-                    R.id.action_salvarContato -> {
+                    R.id.action_salvarLista -> {
                         val nome = binding.commonLayout.editTextNome.text.toString()
                         val unidade = binding.commonLayout.editTextUnidade.text.toString().toInt()
                         val descricao = binding.commonLayout.editTextDescricao.text.toString()

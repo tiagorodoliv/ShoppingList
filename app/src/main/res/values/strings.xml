@@ -7,4 +7,6 @@
     <string name="unidade">Unidade</string>
     <string name="setor">Setor</string>
     <string name="salvar">Salvar</string>
+    <string name="pesquisar">Pesquisar</string>
+    <string name="excluir">Excluir</string>
 </resources>

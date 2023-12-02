@@ -12,14 +12,33 @@ import kotlinx.coroutines.launch
 
 class ListaViewModel(application: Application): AndroidViewModel(application) {
     private val repository: ListaRepository
+    var allLista : LiveData<List<Lista>>
     lateinit var lista : LiveData<Lista>
-    var allList : LiveData<List<Lista>>
+
     init {
-        val dao = ListaDatabase.getDatabase(application).ListaDAO()
+        val dao = ListaDatabase.getDatabase(application).listaDAO()
         repository = ListaRepository(dao)
-        allList = repository.getAllContacts()
+        allLista = repository.getAllLista()
     }
+
     fun insert(lista: Lista) = viewModelScope.launch(Dispatchers.IO){
         repository.insert(lista)
+    }
+
+    fun update(lista: Lista) = viewModelScope.launch(Dispatchers.IO){
+        repository.update(lista)
+    }
+
+    fun delete(lista: Lista) = viewModelScope.launch(Dispatchers.IO){
+        repository.delete(lista)
+    }
+
+
+    fun getListaById(id: Int) {
+        viewModelScope.launch {
+            lista = repository.getContactById(id)
+        }
+
+
     }
 }

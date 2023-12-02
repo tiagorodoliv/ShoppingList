@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
 
 @Database(entities = [Lista::class], version = 1)
 abstract class ListaDatabase: RoomDatabase() {
-    abstract fun ListaDAO(): ListaDAO
+    abstract fun listaDAO(): ListaDAO
     companion object {
         @Volatile
         private var INSTANCE: ListaDatabase? = null
