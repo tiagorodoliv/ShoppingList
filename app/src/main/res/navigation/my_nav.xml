@@ -20,11 +20,11 @@
     <fragment
         android:id="@+id/cadastroFragment"
         android:name="br.ifsp.shoppinglist.ui.CadastroFragment"
-        android:label="fragment_cadastro"
+        android:label="Cadastro"
         tools:layout="@layout/fragment_cadastro" />
     <fragment
         android:id="@+id/detalheFragment"
         android:name="br.ifsp.shoppinglist.ui.DetalheFragment"
-        android:label="fragment_detalhe"
+        android:label="Detalhe Produto"
         tools:layout="@layout/fragment_detalhe" />
 </navigation>
